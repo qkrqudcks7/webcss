@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        margin: 10px;
+        /* 두개의 테두리 사이즈가 다르기 때문에 150px로 지정했을 때 크기가 달라짐(하얀색부분만 150px로 돼서) */
+        /* 사이징을 border-box로 바꾸면 border 다 포함해서 계산해서 같아짐 */
+        width: 150px;
+        box-sizing: border-box;
+      }
+      #small {
+        border: 10px solid black;
+      }
+      #large {
+        border: 30px solid black;
+      }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<div id="small">Hello</div>
+<div id="large">Hello</div>
+</body>
+</html>

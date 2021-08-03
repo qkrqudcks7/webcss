@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--ul에 있는 li라는 뜻-->
+  <style>
+    ul li {
+      color: red;
+      text-decoration: underline;
+    }
+    /* id가 lecture인 직계 자손에 대해서만*/
+    #lecture>li {
+      border: 1px solid red;
+    }
+    ul, ol {
+      background-color: powderblue;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+</ul>
+<ol id="lecture">
+  <li>HTML</li>
+  <li>CSS
+    <ol>
+      <li>aa</li>
+      <li>bb</li>
+      <li>cc</li>
+    </ol>
+  </li>
+  <li>JS</li>
+</ol>
+</body>
+</html>
