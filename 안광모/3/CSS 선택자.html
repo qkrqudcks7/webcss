@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      p {color: blue}
+      /*  ID 선택자 : # */
+      #header {
+        color: deepskyblue;
+      }
+      /*  Class 선택자 : . */
+      .header {
+        color: tomato;
+        border: 1px solid gray;
+      }
+      /* 속성 선택자 */
+      [type = text] {color: green}
+
+      /* 후손 선택자 */
+      .section1 p {color: blueviolet}
+
+      /* 자식 선택자 */
+      .section1 > p {color: red}
+
+      /* 형제 태그 */
+      /* h1태그 바로 뒤에 나오는 태그가 h2인 형제 요소 선택*/
+      h1 + h2 {color: gray}
+
+      /* 반응 선택자 */
+      h1:hover {color: darkred}
+      h2:active {color: blue}
+
+      /* 상태 선택자 */
+      [type = text]:enabled {
+          background-color: orange;
+          color: white;
+      }
+
+      [type = text]:disabled {
+          background-color: gray;
+      }
+
+      [type = text]:focus {
+          background-color: black;
+      }
+
+      [type = checkbox] + div {
+          overflow: hidden;
+          height: 100px;
+          border: 1px solid black;
+      }
+
+      [type = checkbox]:checked + div {
+          height: 0px;
+      }
+
+      /* 문자 선택자 */
+      p::first-letter {font-size: 3em}
+      p::first-line {color: red}
+
+      p::selection {background-color: black; color: red}
+    </style>
+</head>
+<body>
+<h1>안녕</h1>
+<p>1</p>
+<p>2</p>
+
+<h1 id="header">id 선택자</h1>
+
+<h1 class="header">class 선택자</h1>
+
+<input type="text">
+
+<div class="section1">
+    <p>111111111</p>
+    <p>222222222</p>
+    <p>333333333</p>
+    <div>
+        <p>1111111111</p>
+    </div>
+</div>
+
+<h1>Header -1</h1>
+<h2>Header -1</h2>
+<h2>Header -1</h2>
+<h1>Header -1</h1>
+<h2>Header -1</h2>
+<h2>Header -1</h2>
+
+<label>Enabled Input : <input type="text"></label><br>
+<label>Enabled Input : <input type="text" disabled></label><br>
+<input type="checkbox">
+<div class="description">Description~~~</div>
+
+<h1>글자 선택자</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aspernatur corporis, deleniti laborum non quae quidem quo sit tenetur. Autem esse illum in, incidunt ipsam libero quod reprehenderit voluptatibus?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aspernatur corporis, deleniti laborum non quae quidem quo sit tenetur. Autem esse illum in, incidunt ipsam libero quod reprehenderit voluptatibus?</p>
+</body>
+</html>
