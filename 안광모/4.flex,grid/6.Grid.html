@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Box</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template: repeat(3,100px) / repeat(3,1fr);
+        grid-template-areas:
+                "header header header"
+                "section section aside"
+                "footer footer footer";
+        gap: 10px 20px;
+
+        /* 추가 셀 사이즈 지정  */
+        /*grid-auto-rows: 50px;*/
+        /*grid-auto-columns: 100px;*/
+
+        /* 어떻게 배열할건지 row가 기본값 */
+        /*grid-auto-flow: row;*/
+
+        /* 위 아래*/
+        align-content: center;
+        /* 좌 우 */
+        justify-content: center;
+
+      }
+      header {
+        grid-area: header;
+        background-color: orange;
+      }
+      section {
+        grid-area: section;
+        background-color: #eee;
+      }
+      aside {
+        grid-area: aside;
+        background-color: greenyellow;
+      }
+      footer {
+        grid-area: footer;
+        background-color: yellow;
+      }
+      .special {
+        grid-column: span 3;
+        background-color: yellow;
+      }
+
+      .special2 {
+        /* 2번 라인부터 2칸 */
+        grid-column: 2 /span 2;
+        background-color: orange;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+  <header>Header</header>
+  <section>Section</section>
+  <aside>Aside</aside>
+  <footer>Footer</footer>
+  <div>dd</div>
+  <div>dd</div>
+  <div>dd</div>
+</div>
+<br><br><br>
+<div class="container">
+  <div>Item1</div>
+  <div class="special2">item2.2</div>
+  <div class="special">item2</div>
+  <div>Item3</div>
+  <div>Item4</div>
+</div>
+</body>
+</html>
