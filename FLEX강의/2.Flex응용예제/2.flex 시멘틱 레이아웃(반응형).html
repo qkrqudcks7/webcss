@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>시멘틱 반응형 레이아웃</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        border: 1px solid black;
+        width: 1200px;
+      }
+      header {
+        background-color: tomato;
+        padding: 2em;
+        text-align: center;
+      }
+      section {
+        display: flex;
+      }
+      section article {
+        border: 1px solid black;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .left {
+        flex: 1;
+        background-color: yellow;
+      }
+      .main {
+        flex: 4;
+        background-color: yellowgreen;
+      }
+      .right {
+        flex: 1;
+        background-color: green;
+      }
+      footer {
+        background-color: aqua;
+        padding: 2em;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+        section {
+          flex-direction: column;
+        }
+        .left {order: 2}
+        .main {order: 1}
+        .right {order: 3}
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+  <header>Header</header>
+  <section>
+    <article class="left">
+      aside#1
+    </article>
+    <article class="main">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid, at consectetur, consequatur doloremque eos et eum explicabo incidunt laboriosam libero modi numquam placeat possimus quas qui quidem quod, quos reprehenderit tempora totam voluptatibus. Animi, beatae dicta eligendi, eos est illo ipsam iure magni modi officia optio perspiciatis quasi quos sapiente, sequi vero voluptas. Animi at aut deleniti eligendi, ex inventore molestiae, ratione sint ut voluptas voluptatibus voluptatum! At commodi corporis est officia quis tempora ut voluptatibus. Aliquam assumenda autem dolorem ex exercitationem maxime necessitatibus sed, suscipit. Aliquid cum delectus dignissimos expedita non quisquam rem sequi tenetur vero, voluptates?
+    </article>
+    <article class="right">
+      aside#2
+    </article>
+  </section>
+  <footer>Footer</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 레이아웃(3)</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+      }
+      nav {
+        flex: 1;
+        background-color: #ddd;
+      }
+      main {
+        flex: 5;
+      }
+      header {
+        background-color: yellowgreen;
+        height: 100px;
+      }
+      .inner {
+        display: flex;
+      }
+      section {
+        flex: 4;
+      }
+      aside {
+        flex: 1;
+        background-color: #dddddd;
+      }
+      article {
+        height: calc(100vh - 200px);
+      }
+      footer {
+        background-color: #999999;
+        height: 100px;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+  <nav>Nav</nav>
+  <main>
+    <header>Header</header>
+    <div class="inner">
+      <section>
+        <article>article</article>
+        <footer>Footer</footer>
+      </section>
+      <aside>aside</aside>
+    </div>
+  </main>
+</div>
+</body>
+</html>

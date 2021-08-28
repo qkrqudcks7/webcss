@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+      }
+      .container {
+        /* 노스크롤로 100% 채우는 핵심 */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      header {
+        background-color: yellow;
+        padding: 30px;
+      }
+      .banner {
+        background-color: yellowgreen;
+        padding: 30px;
+      }
+      section {
+        display: flex;
+        height: 100%;
+      }
+      section article {
+      }
+      .navi {
+        padding: 30px;
+        background-color: pink;
+        flex-basis: 300px;
+      }
+      .content {
+        padding: 30px;
+        background-color: skyblue;
+        flex: 1;
+      }
+
+    </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h2>Header</h2>
+  </header>
+  <div class="banner">
+    <h2>banner</h2>
+  </div>
+  <section>
+    <article class="navi">
+      <h2>Navi</h2>
+    </article>
+    <article class="content">
+      <h2>Main</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque autem distinctio doloribus et eveniet ex, facilis saepe similique voluptate! A ab accusantium aliquam aut consequuntur cumque cupiditate deleniti dolor doloremque dolorum ea eaque eligendi expedita iste itaque iure modi nihil numquam odio omnis quae quidem sequi sit, soluta unde? Alias at commodi consequatur corporis delectus doloremque eum labore maiores maxime molestiae odio odit quis ratione reiciendis repellendus sint tenetur ullam vel, veritatis, vitae? Atque fugiat minima neque nobis, nulla odio sapiente vero! Adipisci asperiores aspernatur cumque explicabo illo, laborum magnam maiores molestiae porro recusandae similique velit! Accusantium aliquam aperiam asperiores assumenda consectetur debitis deleniti dicta dolore doloribus earum, facilis fuga, illo incidunt iste laudantium natus neque nisi numquam optio quaerat quas quasi sit sunt tempore tenetur veritatis vitae voluptatem. Aperiam asperiores autem consectetur consequuntur deleniti dolor eius eligendi eos est eum minima minus, nam officiis repellat rerum sunt totam.
+      </p>
+    </article>
+  </section>
+</div>
+</body>
+</html>

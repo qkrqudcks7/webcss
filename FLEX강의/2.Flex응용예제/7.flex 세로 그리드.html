@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex column 그리드</title>
+    <style>
+      .container {
+        display: flex;
+
+      }
+      .parent {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+      }
+      .child {
+        background-color: yellowgreen;
+        color: white;
+        text-align: center;
+        padding: 0.5em;
+        margin: 3px;
+        flex: 1;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="parent">
+    <div class="child">1</div>
+  </div>
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+  </div>
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+  </div>
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+  </div>
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+  </div>
+</div>
+...쭉 생성 가능
+</body>
+</html>

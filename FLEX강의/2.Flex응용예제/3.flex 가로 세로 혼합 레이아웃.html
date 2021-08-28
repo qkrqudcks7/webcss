@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가로 세로 혼합 레이아웃</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      section {
+        width: 1200px;
+        display: flex;
+      }
+      section article {
+        flex: 1;
+      }
+      .content1 {
+        background-color: yellow;
+        padding: 20px;
+      }
+      .content2 {
+        display: flex;
+        flex-direction: column;
+      }
+      .content2 div {
+        flex: 1;
+        padding: 20px;
+      }
+      .sub1 {
+        background-color: skyblue;
+      }
+      .sub2 {
+        background-color: pink;
+      }
+
+      @media (max-width: 768px) {
+        section {
+          flex-direction: column;
+        }
+
+      }
+    </style>
+</head>
+<body>
+<section>
+  <article class="content1">
+    <h2>Content1</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid commodi debitis, doloremque, ea eaque magnam maiores necessitatibus optio, quasi quos reprehenderit saepe sapiente tempore tenetur? Aperiam beatae delectus deleniti doloremque, eaque earum eligendi ex facere fugit harum, labore laborum molestias nisi, ullam vel! A, cum doloremque maiores mollitia nemo recusandae reiciendis velit? Accusantium asperiores, distinctio dolorem exercitationem minima odio qui recusandae. Debitis est exercitationem illo perferendis repellendus tenetur unde voluptatem. At commodi deserunt, earum eius, ex magnam nulla provident quae, quam quos ratione reiciendis rerum sequi temporibus vero. Aperiam assumenda autem blanditiis dolores esse officiis quis quo, sequi tempora?
+    </p>
+  </article>
+  <article class="content2">
+    <div class="sub1">
+      <h2>Sub1</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quam?
+      </p>
+    </div>
+    <div class="sub2">
+      <h2>Sub2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quam?
+      </p>
+    </div>
+  </article>
+</section>
+</body>
+</html>

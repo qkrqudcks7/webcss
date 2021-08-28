@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>반응형 헤더</title>
+    <style>
+      body {
+        font-family: 'Noto Sans CJK KR Regular', sans-serif;
+        margin: 0;
+        background-color: #eee;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+      }
+      header {
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+      }
+      header div {
+
+      }
+      .logo {
+        flex: 1;
+      }
+      .gnb {
+        flex: 6;
+        display: flex;
+        justify-content: center;
+      }
+      .gnb a {
+        margin: 0 20px;
+      }
+      .search {
+        text-align: right;
+        flex: 1;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+        }
+        .gnb a {
+          margin: 0 5px;
+        }
+        .logo {
+          text-align: center;
+        }
+        .search {
+          text-align: center;
+        }
+      }
+    </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="http://placehold.it/100x40">
+  </div>
+  <div class="gnb">
+    <a href="#">Home</a>
+    <a href="#">about us</a>
+    <a href="#">contact us</a>
+    <a href="#">blog</a>
+    <a href="#">service</a>
+  </div>
+  <div class="search">
+    <input type="search" placeholder="Search">
+  </div>
+</header>
+</body>
+</html>

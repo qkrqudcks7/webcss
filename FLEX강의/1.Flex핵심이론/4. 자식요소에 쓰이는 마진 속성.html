@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자식요소 - 마진 속성</title>
+    <style>
+      .parent {
+        border: 1px solid black;
+        display: flex;
+      }
+      .child {
+        width: 100px;
+        height: 50px;
+        background-color: crimson;
+        color: #fff;
+      }
+      .child:nth-child(1) {
+        /*margin-right: auto;*/
+      }
+      .child:nth-child(3){
+        margin-left: auto;
+      }
+    </style>
+</head>
+<body>
+<div class="parent">
+  <div class="child">child1</div>
+  <div class="child">child2</div>
+  <div class="child">child3</div>
+</div>
+</body>
+</html>

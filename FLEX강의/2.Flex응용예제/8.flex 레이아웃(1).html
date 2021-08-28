@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 레이아웃 설계(1)</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+      }
+      .container {
+      }
+      header {
+        background-color: yellowgreen;
+        color: white;
+        height: 150px;
+        text-align: center;
+      }
+      section {
+        display: flex;
+      }
+      article, aside, nav {
+        height: calc(100vh - 300px);
+      }
+      article {
+        flex: 3;
+        background-color: #eee;
+      }
+      aside {
+        flex: 1;
+        background-color: #ddd;
+      }
+      nav {
+        flex: 1;
+        background-color: #ccc;
+      }
+      footer {
+        background-color: gray;
+        color: white;
+        height: 150px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+  <header>Header</header>
+  <section>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <nav>Nav</nav>
+  </section>
+  <footer>Footer</footer>
+</div>
+</body>
+</html>
