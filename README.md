@@ -35,5 +35,8 @@ bootstrap 단위
 ### @media (prefers-color-scheme:   )
 - 사용자의 시스템이 라이트 테마나 다크 테마를 사용하는지 탐지하는 데에 사용됩니다.
 
+### autofocus
+- this.---.autofocus = true
+
 
 
