@@ -20,6 +20,9 @@ bootstrap 단위
 
 # JS
 
+![image](https://user-images.githubusercontent.com/66015002/131299368-c56dcd3b-c0e8-4843-b2c1-260ce2a2a0b8.png)
+
+
 ### window.matchMedia()
 - css 미디어 쿼리를 js에 사용하는 메소드
 - .matches로 마무리하면 true 값으로 반환
