@@ -18,4 +18,11 @@ bootstrap 단위
 ![image](https://user-images.githubusercontent.com/66015002/130977046-820e4d7a-adda-44d5-adb3-f369f4ce243f.png)
 
 
+# JS
+
+### window.matchMedia()
+- css 미디어 쿼리를 js에 사용하는 메소드
+- .matches로 마무리하면 true 값으로 반환
+
+
 
