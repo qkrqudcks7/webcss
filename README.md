@@ -29,7 +29,7 @@ bootstrap 단위
 - .classList.toggle("----") : class가 존재할 경우 제거, 아니면 추가
 - .classList.contains("---") : class 존재 여부에 따라 true/false 반환
 
-### @media (prefers-color-sheme:   )
+### @media (prefers-color-scheme:   )
 - 사용자의 시스템이 라이트 테마나 다크 테마를 사용하는지 탐지하는 데에 사용됩니다.
 
 
