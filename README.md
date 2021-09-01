@@ -41,5 +41,6 @@ bootstrap 단위
 
 <hr>
 
-
+### .dataset
+- data-user-name 데이터 세트를 읽어들인다면, data-는 제거되며, userName과 같이 카멜케이스로 변경하여 읽는다.
 
